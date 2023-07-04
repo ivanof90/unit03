@@ -7,4 +7,6 @@
 !apt install xvfb
 !pip3 install pyvirtualdisplay
 
-!python -m rl_zoo3.train --algo dqn  --env SpaceInvadersNoFrameskip-v4 -f logs/ -c dqn.yml
+!python3 -m rl_zoo3.train --algo dqn  --env SpaceInvadersNoFrameskip-v4 -f logs/ -c dqn.yml
+
+nohup python3 -m rl_zoo3.train --algo dqn  --env SpaceInvadersNoFrameskip-v4 -f logs/ -c dqn.yml > myoutput.txt >2&1 
