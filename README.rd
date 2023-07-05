@@ -11,3 +11,4 @@
 !python3 -m rl_zoo3.enjoy  --algo dqn  --env SpaceInvadersNoFrameskip-v4  --no-render  --n-timesteps 5000  --folder logs/
 
 nohup python3 -m rl_zoo3.train --algo dqn  --env SpaceInvadersNoFrameskip-v4 -f logs/ -c dqn.yml > myoutput.txt >2&1 
+python3 -m rl_zoo3.enjoy  --algo dqn  --env SpaceInvadersNoFrameskip-v4  --n-timesteps 5000  --folder logs/
